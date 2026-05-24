@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    /* Premium Midnight Dark Architecture Colors */
-    --bg-main: #0b0d11;         /* Deep rich midnight black */
-    --card-surface: #131720;    /* Slightly lighter dark slate for panels */
-    --primary-blue: #0ea8ea;    /* Neon Electric Blue accent */
+    --bg-main: #0b0d11;
+    --card-surface: #131720;
+    --primary-blue: #0ea8ea;
     --primary-glow: rgba(14, 168, 234, 0.15);
     --primary-dark: #0b8ec7;
-    --text-main: #f1f5f9;       /* Off-white readable text */
-    --text-muted: #94a3b8;      /* Soft grey text for meta items */
-    --border-light: #222938;    /* Cybernetic grid border lines */
+    --text-main: #f1f5f9;
+    --text-muted: #94a3b8;
+    --border-light: #222938;
     --transition-smooth: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
     --radius-standard: 12px;
 }
@@ -28,7 +27,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* HEADER WITH FLOATING SIGNATURE LOGO */
+/* HEADER AREA */
 .header {
     max-width: 1300px;
     margin: 0 auto;
@@ -92,7 +91,7 @@ body {
     box-shadow: 0 4px 15px var(--primary-glow);
 }
 
-/* HERO SECTION GRID */
+/* HERO GRID CONTAINER */
 .hero-section {
     max-width: 1300px;
     margin: 0 auto;
@@ -185,7 +184,7 @@ body {
     box-shadow: 0 8px 20px rgba(14, 168, 234, 0.4);
 }
 
-/* PORTRAIT SYSTEM */
+/* PHOTO COMPONENT */
 .hero-media {
     flex-shrink: 0;
 }
@@ -224,7 +223,7 @@ body {
     opacity: 0.6;
 }
 
-/* MINIMALIST GLASSMORPHISM DOCK */
+/* NAVIGATION INTERFACE BAR */
 .navigation-dock {
     max-width: 1300px;
     margin: 40px auto 10px auto;
@@ -288,7 +287,7 @@ body {
     box-shadow: 0 4px 15px var(--primary-glow);
 }
 
-/* PANELS ARCHITECTURE */
+/* WORKSPACE BLOCKS CONTAINER */
 .workspace-content {
     max-width: 1100px;
     margin: 0 auto;
@@ -309,7 +308,7 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* BENTO STRUCTURE (DARK PROFILE) */
+/* BENTO STRUCTURE PANELS */
 .bento-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -396,7 +395,7 @@ body {
     line-height: 1.6;
 }
 
-/* EXPERIENCE TIMELINE CONTAINER */
+/* TIMELINE TRACKS */
 .experience-timeline {
     display: flex;
     flex-direction: column;
@@ -470,7 +469,7 @@ body {
     font-weight: bold;
 }
 
-/* INTERACTIVE MODERN TAG CLOUDS */
+/* ECOSYSTEM MAP COMPONENT */
 .ecosystem-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
