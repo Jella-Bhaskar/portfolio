@@ -47,6 +47,7 @@ body {
     background: linear-gradient(135deg, #ffffff, var(--primary-blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 8px var(--primary-glow));
 }
 
 .header-right {
@@ -325,6 +326,7 @@ body {
 
 .bento-card:hover {
     border-color: rgba(14, 168, 234, 0.25);
+    box-shadow: 0 4px 20px rgba(14, 168, 234, 0.05);
 }
 
 .bento-card h3 {
@@ -412,6 +414,7 @@ body {
 .timeline-node:hover {
     border-color: rgba(14, 168, 234, 0.2);
     transform: translateX(4px);
+    box-shadow: 0 4px 20px rgba(14, 168, 234, 0.03);
 }
 
 .node-header {
@@ -467,7 +470,7 @@ body {
     font-weight: bold;
 }
 
-/* ECOSYSTEM TAG MODULES */
+/* INTERACTIVE MODERN TAG CLOUDS */
 .ecosystem-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -519,7 +522,7 @@ body {
     box-shadow: 0 4px 10px var(--primary-glow);
 }
 
-/* CREDENTIALS CARDS */
+/* CREDENTIALS SYSTEM */
 .credentials-list {
     display: flex;
     flex-direction: column;
@@ -557,7 +560,7 @@ body {
     color: var(--text-muted);
 }
 
-/* CONTACT CARD MODULE */
+/* CONTACT CARD LAYER */
 .contact-wrapper {
     display: flex;
     justify-content: center;
