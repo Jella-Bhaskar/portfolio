@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --bg-main: #0b0d11;
-    --card-surface: #131720;
-    --primary-blue: #0ea8ea;
+    /* Premium Midnight Dark Architecture Colors */
+    --bg-main: #0b0d11;         /* Deep rich midnight black */
+    --card-surface: #131720;    /* Slightly lighter dark slate for panels */
+    --primary-blue: #0ea8ea;    /* Neon Electric Blue accent */
     --primary-glow: rgba(14, 168, 234, 0.15);
     --primary-dark: #0b8ec7;
-    --text-main: #f1f5f9;
-    --text-muted: #94a3b8;
-    --border-light: #222938;
+    --text-main: #f1f5f9;       /* Off-white readable text */
+    --text-muted: #94a3b8;      /* Soft grey text for meta items */
+    --border-light: #222938;    /* Cybernetic grid border lines */
     --transition-smooth: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
     --radius-standard: 12px;
 }
@@ -184,15 +185,15 @@ body {
     box-shadow: 0 8px 20px rgba(14, 168, 234, 0.4);
 }
 
-/* PHOTO COMPONENT */
+/* COMPACT PHOTO SYSTEM */
 .hero-media {
     flex-shrink: 0;
 }
 
 .image-frame {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 220px;   /* Scaled down cleanly */
+    height: 220px;  /* Scaled down cleanly */
 }
 
 .image-frame img {
@@ -211,8 +212,8 @@ body {
     height: 100%;
     border: 2px solid var(--primary-blue);
     border-radius: var(--radius-standard);
-    top: 12px;
-    left: 12px;
+    top: 10px;      /* Proportionate accent offset */
+    left: 10px;     /* Proportionate accent offset */
     z-index: 1;
     opacity: 0.3;
     transition: var(--transition-smooth);
