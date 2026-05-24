@@ -8,190 +8,203 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
-    <!-- Main Hero Section -->
-    <section class="hero-section">
+    
+    <!-- MAIN HERO SECTION -->
+    <section class="main">
+        <!-- Header -->
         <header class="header">
             <div class="logo">
-                <span class="logo-text">JB</span>
+                <p class="lt">JB</p>
             </div>
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/jella-bhaskar-176777234/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/19PA1A0465" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="https://instagram.com/__bhaskar_18" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <button class="btn btn-download" onclick="window.print()">Resume</button>
+            <!-- Social Icons -->
+            <div class="socialmedia">
+                <ul class="socialicons">
+                    <li><a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/19PA1A0465" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><button class="btn" onclick="window.print()">Resume</button></li>
+                </ul>
             </div>
         </header>
 
-        <div class="hero-content">
-            <div class="intro-pane">
-                <span class="badge">Electronics & Software Engineer</span>
+        <!-- Main Content View -->
+        <div class="maincontent">
+            <div class="intro">
+                <p class="subheading">I am</p>
                 <h1 class="name">Jella Bhaskar</h1>
-                <p class="role">Specializing in Intelligent Systems & Data Infrastructure</p>
-                <p class="intro-text">Bridging hardware architecture with modern software ecosystems. Focused on developing highly optimized algorithms, clean database structures, and machine learning pipelines.</p>
-                <a href="#explore" class="btn btn-primary">View Track Record</a>
+                <p class="role">Generative AI & Document AI Engineer</p>
+                <p class="introtext">Building production-grade LLM pipelines, intelligent document processing (IDP) systems, and cloud-native AI infrastructure at enterprise scale.</p>
+                <button class="btn ttn-btn" onclick="document.getElementById('explore-anchor').scrollIntoView({behavior: 'smooth'});">Explore</button>
             </div>
 
-            <div class="image-wrapper">
-                <div class="image-card">
-                    <img src="./images/56.JPG" alt="Jella Bhaskar Portrait">
+            <!-- Your Signature Angled Graphic Photo Container -->
+            <div class="portfolio-pic">
+                <div class="pic">
+                    <img src="./images/56.JPG" alt="Jella Bhaskar">
                 </div>
-                <div class="decorative-bg"></div>
+                <div class="bg"></div>
             </div>
         </div>
     </section>
 
-    <!-- Navigation Hub -->
-    <section class="navigation-hub" id="explore">
-        <nav class="sticky-nav">
-            <button class="nav-item active" data-target="about-pane">
+    <!-- NAVIGATION TABS -->
+    <section class="navigation" id="explore-anchor">
+        <nav class="nav">
+            <div class="nav-items about-link actives" data-tab="as">
                 <i class="fa-regular fa-user"></i>
-                <span class="nav-label">About</span>
-            </button>
-            <button class="nav-item" data-target="projects-pane">
-                <i class="fa-solid fa-code"></i>
-                <span class="nav-label">Projects</span>
-            </button>
-            <button class="nav-item" data-target="education-pane">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <span class="nav-label">Timeline</span>
-            </button>
-            <button class="nav-item" data-target="contact-pane">
+                <p class="navtext">About Me</p>
+            </div>
+
+            <div class="nav-items project-link" data-tab="ps">
+                <i class="fa-solid fa-laptop-code"></i>
+                <p class="navtext">Experience & Projects</p>
+            </div>
+
+            <div class="nav-items course-link" data-tab="cs">
+                <i class="fa-solid fa-brain"></i>
+                <p class="navtext">Core Skills</p>
+            </div>
+
+            <div class="nav-items certification-link" data-tab="ccs">
+                <i class="fa-solid fa-award"></i>
+                <p class="navtext">Certifications</p>
+            </div>
+
+            <div class="nav-items contact-link" data-tab="conts">
                 <i class="fa-solid fa-envelope"></i>
-                <span class="nav-label">Contact</span>
-            </button>
+                <p class="navtext">Contact</p>
+            </div>
         </nav>
     </section>
 
-    <!-- Content Workspace -->
-    <main class="content-workspace">
-        
-        <!-- About & Skills Pane -->
-        <div id="about-pane" class="tab-pane active">
-            <div class="grid-layout">
-                <div class="card summary-card">
-                    <h2>Professional Profile</h2>
-                    <p>Analytical Engineering graduate with deep core foundations in software execution, data modeling, and embedded systems architecture. Competent across full-stack primitives and automation frameworks.</p>
-                </div>
-                <div class="card skills-card">
-                    <h2>Technical Ecosystem</h2>
-                    <div class="skill-groups">
-                        <div class="skill-category">
-                            <h3>Languages</h3>
-                            <div class="tag-cloud">
-                                <span class="tag">Python</span>
-                                <span class="tag">Java</span>
-                                <span class="tag">SQL</span>
-                                <span class="tag">PL/SQL</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Web & Core</h3>
-                            <div class="tag-cloud">
-                                <span class="tag">HTML5</span>
-                                <span class="tag">CSS3</span>
-                                <span class="tag">Data Structures</span>
-                            </div>
+    <!-- INTERACTIVE CONTENT PANELS CONTAINER -->
+    <section class="contentarea">
+        <div class="display">
+            
+            <!-- PANEL 1: About Me (Visible by Default) -->
+            <div class="tab-panel as">
+                <div class="aboutme">
+                    <div class="about">
+                        <h1 class="about-title">Professional Summary</h1>
+                        <p class="space">Generative AI & Document AI Engineer with 2.3 years of experience building production LLM pipelines, intelligent document processing (IDP) systems, and cloud-native AI infrastructure at Accenture.</p>
+                    </div>
+
+                    <div class="about">
+                        <h1 class="about-title">Education</h1>
+                        <div class="space">
+                            <p><b>B.E. Electronics & Communication Engineering</b></p>
+                            <p class="space">Vishnu Institute of Technology</p>
+                            <p>2019 – 2023 || CGPA: 9.2/10</p>
                         </div>
                     </div>
+
+                    <div class="about">
+                        <h1 class="about-title">Key Recognition</h1>
+                        <p class="space"><b>Multi-Dimensional Skill Champion (Accenture):</b> Recognized for cross-functional excellence across Generative AI pipelines, Agentic AI automation, IDP system design, and cloud infrastructure.</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Projects Pane -->
-        <div id="projects-pane" class="tab-pane">
-            <div class="projects-list">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Machine Learning Framework for Abnormal EEG Signal Identification</h3>
-                        <span class="project-tag">ML / BioTech</span>
+            <!-- PANEL 2: Experience & Projects -->
+            <div class="tab-panel ps" style="display: none;">
+                <div class="projects">
+                    <!-- Experience -->
+                    <div class="project">
+                        <h1 class="pl hd">AI/ML Engineer — Accenture (Feb 2024 - Present)</h1>
+                        <p class="pl">
+                            Architected a 5-component IDP pipeline on Azure Kubernetes Service (AKS) managing distributed Python microservices via async queues. Advanced Document Classifier accuracy from 50.8% to 86.75% and reached a 95-98% F1-score for automated data extraction models. Integrated GPT-4 with function-calling for autonomous structured data outputs.
+                        </p>
                     </div>
-                    <p>Designed and deployed automated classification models processing raw EEG signals. Streamlines clinical analysis by highlighting structural neural anomalies to assist neurological diagnostic workflows.</p>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Deep Learning Skin Cancer Classification via Dermoscopic Images</h3>
-                        <span class="project-tag">Computer Vision</span>
+                    <!-- Project -->
+                    <div class="project tbb">
+                        <h1 class="pl hd">RAG Document Intelligence System</h1>
+                        <p class="pl">
+                            Designed an end-to-end RAG pipeline using LangChain and Azure OpenAI (GPT-4) for domain-specific semantic search. Implemented recursive semantic chunking, FAISS vector retrieval, and reresh-grading via the RAGAS evaluation framework. Secured with a FastAPI backend providing strict PII data masking.
+                        </p>
                     </div>
-                    <p>Engineered a Computer-Aided Diagnosis (CAD) system employing advanced image segmentation and deep convolutional neural networks (CNNs). Automates lesion localization and target identification with verified validation bounds.</p>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Smart IoT Street Lighting System</h3>
-                        <span class="project-tag">IoT / Hardware</span>
-                    </div>
-                    <p>Developed dynamic power-scaling hardware firmware. Utilizes sensor matrices to detect proximity movement, dynamically adjusting lighting matrices to optimize metropolitan power grids.</p>
                 </div>
             </div>
-        </div>
 
-        <!-- Education & Credentials Pane -->
-        <div id="education-pane" class="tab-pane">
-            <div class="grid-layout">
-                <div class="card">
-                    <h2>Education History</h2>
-                    <ul class="timeline">
-                        <li>
-                            <span class="date">2019 – 2023</span>
-                            <strong>B.Tech — Electronics and Communication Engineering</strong>
-                            <p>Vishnu Institute of Technology | CGPA: 9.2</p>
-                        </li>
-                        <li>
-                            <span class="date">2017 – 2019</span>
-                            <strong>Intermediate Education</strong>
-                            <p>Sasi New Gen Junior College | GPA: 9.9</p>
-                        </li>
+            <!-- PANEL 3: Core Skills Mapping -->
+            <div class="tab-panel cs" style="display: none;">
+                <div class="skills-container">
+                    <div class="skill-block">
+                        <h3>Generative AI & LLMs</h3>
+                        <ul class="skills">
+                            <li>Azure OpenAI</li>
+                            <li>LangChain</li>
+                            <li>RAG Architecture</li>
+                            <li>Agentic AI</li>
+                        </ul>
+                    </div>
+                    <div class="skill-block">
+                        <h3>Document AI & Data</h3>
+                        <ul class="skills">
+                            <li>Azure Doc Intelligence</li>
+                            <li>OCR Pipelines</li>
+                            <li>FAISS</li>
+                            <li>CosmosDB</li>
+                        </ul>
+                    </div>
+                    <div class="skill-block">
+                        <h3>Cloud & Infrastructure</h3>
+                        <ul class="skills">
+                            <li>Kubernetes (AKS/EKS)</li>
+                            <li>Docker</li>
+                            <li>FastAPI</li>
+                            <li>CI/CD</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PANEL 4: Certifications -->
+            <div class="tab-panel ccs" style="display: none;">
+                <div class="certify">
+                    <h1 class="ch">Professional Credentials</h1>
+                    <ul class="cname">
+                        <li class="certd"><i class="fa-solid fa-shield-halved"></i> AWS Certified Cloud Practitioner</li>
+                        <li class="certd"><i class="fa-solid fa-cloud"></i> Microsoft Azure Fundamentals (AZ-900)</li>
+                        <li class="certd"><i class="fa-solid fa-microchip"></i> Microsoft Azure AI Fundamentals (AI-900)</li>
                     </ul>
                 </div>
-                <div class="card">
-                    <h2>Verified Framework Certifications</h2>
-                    <ul class="credential-list">
-                        <li><i class="fa-solid fa-award target-blue"></i> Oracle Database SQL Certified Associate</li>
-                        <li><i class="fa-solid fa-award target-blue"></i> Oracle Database PL/SQL Developer Certified Professional</li>
-                        <li><i class="fa-solid fa-certificate"></i> Machine Learning Ecosystem specialization (Coursera)</li>
-                        <li><i class="fa-solid fa-certificate"></i> Computing in Python & Structural Programming (edX)</li>
-                    </ul>
+            </div>
+
+            <!-- PANEL 5: Contact Connection Info -->
+            <div class="tab-panel conts" style="display: none;">
+                <div class="contact">
+                    <div class="cdisplay">
+                        <p class="cdc"><i class="fa-solid fa-envelope cicon"></i> jellabhaskar183@gmail.com</p>
+                        <p class="cdc"><i class="fa-solid fa-phone cicon"></i> +91 9959065015</p>
+                        <p class="cdc"><i class="fa-solid fa-map-location-dot cicon"></i> Bengaluru, India</p>
+                    </div>
                 </div>
             </div>
+
         </div>
+    </section>
 
-        <!-- Contact Pane -->
-        <div id="contact-pane" class="tab-pane">
-            <div class="card contact-container">
-                <h2>Initiate Connection</h2>
-                <p>Available for engineering roles, technical collaboration, and system design pipelines.</p>
-                <div class="contact-methods">
-                    <a href="mailto:bhaskar180302@gmail.com" class="contact-tile">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>bhaskar180302@gmail.com</span>
-                    </a>
-                    <a href="tel:+919491567746" class="contact-tile">
-                        <i class="fa-solid fa-phone"></i>
-                        <span>+91 9491567746</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-    <!-- Vanilla Javascript (No jQuery needed) -->
+    <!-- Clean, Fast Native JS Tab Controller (No jQuery Dependency needed) -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const navItems = document.querySelectorAll('.nav-item');
-            const tabPanes = document.querySelectorAll('.tab-pane');
+            const tabs = document.querySelectorAll('.nav-items');
+            const panels = document.querySelectorAll('.tab-panel');
 
-            navItems.forEach(item => {
-                item.addEventListener('click', () => {
-                    const target = item.getAttribute('data-target');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Update Nav Links UI active state
+                    tabs.forEach(t => t.classList.remove('actives'));
+                    tab.classList.add('actives');
 
-                    navItems.forEach(nav => nav.classList.remove('active'));
-                    tabPanes.forEach(pane => pane.classList.remove('active'));
-
-                    item.classList.add('active');
-                    document.getElementById(target).classList.add('active');
+                    // Switch visible Content Panels
+                    const targetPanel = tab.getAttribute('data-tab');
+                    panels.forEach(panel => {
+                        if (panel.classList.contains(targetPanel)) {
+                            panel.style.display = 'block';
+                        } else {
+                            panel.style.display = 'none';
+                        }
+                    });
                 });
             });
         });
